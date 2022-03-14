@@ -1,0 +1,508 @@
+@charset "utf-8";
+
+/* ---------- 主要素 ----------*/
+/* body要素 */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    overflow-y: scroll;
+    background-color:#eaeaea;
+}
+
+/* ---------------------header要素--------------------------- */
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #40ce9a;
+    color: #fff;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, .4);
+}
+
+.header-nav{
+    height: 60px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+.logo{
+    float:left;
+}
+
+.logo img{
+    width: 40%;
+}
+
+.global-nav{
+    float:right;
+}
+
+.global-nav li{
+    float: left;
+    margin: 12px 20px;
+    font-size: 20px;
+    list-style: none;
+    font-family: 'Bitter',serif;
+}
+
+.global-nav li a{
+    color: 555555;
+    text-decoration: none;
+}
+
+.global-nav li a:hover{
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+
+#index{
+    height: 100%;
+    background-image: url(../images/S__66666499.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+}
+
+#wrap{
+    width: 960px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, .4);
+}
+
+/* ---------------------footer要素------------------ */
+footer{
+    height: 40px;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    color: #555;
+    background-color: #e4e4e4;
+    
+}
+
+/* ---------- 副要素 ----------*/
+
+/* a要素　*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+a:visited{
+    color: inherit;
+}
+
+/* ul要素*/
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* li要素 */
+li{
+    list-style-type: none;
+}
+
+/* h1要素 */
+ h1{
+    color: white;
+    font-size: 25px;
+}
+
+hr {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border: 1px solid rgba(128, 128, 128, 0.673);
+}
+
+b {
+    position: relative;
+    display: inline-block;
+    padding: 0 55px;
+}
+  
+b:before, b:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+  
+b:before {
+    left:0;
+}
+
+b:after {
+    right: 0;
+}
+
+.fade{
+    animation: fadeIn 1.5s ease 0s 1 normal;
+}
+
+@keyframes fadeIn { /*animation-nameで設定した値を書く*/
+
+    0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+  
+    100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+  
+}
+
+
+/* --------------------top.html要素--------------------- */
+.topcontent{
+    text-align: center;
+    margin: 320px auto;
+}
+
+.topcontent h1{
+    font-size: 50px;
+}
+
+.topcontent .topbtn a{
+    background-color: #40ce9a;
+    color: white;
+    font-size: 25px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    border: 3px solid #aaaaaa;
+    margin: auto;
+}
+
+.topcontent .topbtn a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #34a77d;
+}
+
+.topbtn a{
+    font-size: 25px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    border: 3px solid #aaaaaa;
+    margin: auto;
+}
+
+.topbtn a:hover{
+    background-color: white;
+    color: #34a77d;
+}
+
+
+
+
+/* --------------------regist.html要素 --------------------*/
+button, input[type="submit"] {
+    outline: none;
+}
+.clear {
+    clear: both;
+}
+
+
+.content h1{
+    color: black;
+    font-family: 'Yu Mincho',sans-serif;
+    font-size: 40px;
+    text-decoration: underline solid darkcyan;
+}
+
+.content h2{
+    color: black;
+    font-size: 15px;
+}
+
+.content {
+    position: relative;
+    margin: 10px auto;
+    background-color: #fff;
+    color: #2b546a;
+    border: 1px solid #d1d1d1;
+    max-width: 600px;
+    padding: 30px 100px 60px;
+    border-radius: 5px;
+}
+
+
+.content input {
+    border: none;
+    border-bottom: 1px solid #d1d1d1;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 8px;
+}
+
+
+.btn {
+    width: 100%;
+    background-color: #40ce9a;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #34a77d;
+}
+
+.btn:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.next-btn {
+    float: right;
+    width: 46%;
+}
+
+.back-btn {
+    width: 46%;
+    text-align: center;
+    background-color: #ff9090;
+    border-radius: 5px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, .4);
+    padding: 12px;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    background-color: #ca7070;
+}
+
+.back-btn:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+.control {
+    margin-bottom: 3em;
+}
+
+label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+.required {
+    margin-left: .3em;
+    color: #f33;
+    font-size: .9em;
+    padding: 3px;
+    background-color: #fee;
+    font-weight: bold;
+}
+.error {
+    color: #d60e0e;
+    font-size: 60%;
+}
+
+.check-info {
+    color: #2b546a;
+    font-weight: bold;
+}
+
+/* ---------------------logout要素--------------------------- */
+.login .back-btn, .logout .back-btn, .logoutdone .back-btn{
+    margin: auto;
+    float: unset;
+    
+}
+
+.login .content, .logout .content, .logoutdone .content{
+    padding: 30px 100px 90px;
+    text-align: center;
+}
+
+.logout .back-btn{
+    background-color: rgba(160, 60, 60, 0.8);
+}
+
+.logout .back-btn:hover {
+    background-color: rgba(160, 60, 60, 1.0);
+}
+
+/*---------------------------mapage-------------------------*/
+.mypage h1{
+    color: #000;
+}
+
+.deletebtn{
+    background-color: rgba(160, 60, 60, 0.8);
+}
+
+.deletebtn:hover {
+    background-color: rgba(160, 60, 60, 1.0);
+}
+
+
+/*------------------------ search.html --------------------------*/
+.search-frame{
+}
+
+.result{
+    width: 70%;
+    float: right;
+}
+
+.detailed{
+    width: 30%;
+    float : left;
+}
+
+.detailed hr{
+    width: 80%;
+    margin: 20px 0;
+}
+
+.detailed .btn{
+    width: 70%;
+    margin-top: 20px;
+}
+
+.detailed dt{
+    font-size: 20px;
+    padding: 0.25em 0.5em;
+    background: transparent;
+    border-left: solid 5px #40ce9a;
+    width: 70%;
+}
+
+.detailed select{
+    width: 100px;
+    height: 25px;
+    margin: auto;
+    text-align: center;
+}
+
+.result-list{
+    padding: 15px;
+}
+
+.result-list a{
+    display: block;
+    transition: 0.3s ;
+
+}
+
+.result-list a:hover{
+    background-color: #1f1f1f3f;
+    transform:scale(1.02,1.02);
+}
+
+.result-list b{
+    margin: 15px;
+}
+
+.result-list hr{
+    margin: 25px 0 15px;
+}
+
+.result li{
+    margin-bottom: 30px;
+}
+
+.list-img img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.result .btn{
+    margin-top: 4px;
+    background-color: #40ce9a;
+    font-weight: bold;
+    font-size: 15px;
+}
+.result .btn:hover{
+    background-color: #34a77d;
+}
+
+ .defavo, .result .defavo{
+    background-color: #ff9090;
+}
+
+ .defavo:hover, .result .defavo:hover{
+    background-color: #ca7070;
+}
+
+.result h1{
+    color: #000;
+}
+
+.list-date{
+    
+}
+
+.list-tag{
+    margin: 0 5px;
+}
+
+.clear{
+}
+
+.clear .btn{
+    width: 30%;
+    padding : 5px 10px;
+    background-color: #a1a1a1;
+}
+
+
+
+.mypage a, .login a, .regist a{
+    color: #ff9090;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+    body{
+        background-color: #d60e0e;
+    }
+    #wrap{
+        background-color: #d60e0e;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    body{
+        background-color: #0e11d6;
+    }
+    #wrap{
+        background-color: #0e11d6;
+    }
+}
